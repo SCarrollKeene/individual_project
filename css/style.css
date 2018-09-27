@@ -1,0 +1,64 @@
+body {
+    font-family: "Times New Roman", sans-serif;
+}
+
+#title {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.active {
+    background-color: rgb(255, 238, 0);
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: red;
+}
+
+#subject {
+    height: 200px;
+}
+
+.foot {
+    background-color: #333;
+}
+
+.txtWht {
+    color: white;
+} 
+
+@media only screen and (min-width: 400px) {
+
+}
+
+@media only screen and (min-width: 720px) {
+
+}
+
+@media only screen and (min-width: 900px) {
+    .container {
+        width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
