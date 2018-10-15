@@ -21,28 +21,24 @@
                     </ul>
             </nav>
 
-            
+            <header>
+                <h2>Welcome</h2>
+            </header>
 
-            <h2>Welcome</h2>
-            
-            <h3>Can you guess my favorite movie?</h3>
-            <section>
-                <label>
-                    <input type="radio" name="movieOne" value="m1" onclick="movieCheck(this.value);">Mission Impossible
-                </label>
-                <label>
-                    <input type="radio" name="movieTwo" value="m2" onclick="movieCheck(this.value);">Interstellar
-                </label>
-                <label>
-                    <input type="radio" name="movieThree" value="m3" onclick="movieCheck(this.value);">Coco
-                </label>
-                <label>
-                    <input type="radio" name="movieFour" value="m4" onclick="movieCheck(this.value);">Deadpool 2
-                </label>
-                <label>
-                    <input type="radio" name="movieFive" value="m5" onclick="movieCheck(this.value);">None
-                </label>
-            </section>
+            <div>
+                <form>
+                    <p><label for="day">Day</label>
+                        <input type="text" id="userDay" name="userDay" required /></P>
+                    <p><label for="month">Month</label>
+                        <input type="text" id="userMonth" name="userMonth" required /></p>
+                    <p><label for="year">Year</label>
+                        <input type="text" id="userYear" name="userYear" required /></p>
+                </form>
+                     <input type="submit" value="Enter" onclick="elapsedTime()">
+              </div>
+            <div>
+              <p></p>
+            </div>
 
             <footer class="foot txtWht">
                 <p>CWB 205</p>

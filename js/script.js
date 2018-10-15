@@ -45,3 +45,18 @@ function movieCheck(movie) {
         alert(`Giving up already huh?`);
     }
 }
+
+function elapsedTime() {
+    let userDay = document.getElementById("userDay");
+    let userMonth = document.getElementByID("userMonth");
+    let userYear = document.getElementById("userYear");
+  
+    let dayRef = document.createTextNode(userDay.value);
+    let monRef = document.createTextNode(userMonth.value);
+    let yrRef = document.createTextNode(userYear.value);
+
+    let userDate = new Date();
+    dayRef = userDate.getDay();
+    monRef = userDate.getMonth();
+    yrRef = userDate.getFullYear();
+  }
