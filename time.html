@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Individual Case 4</title>
+        <link href="css/style.css" rel="stylesheet">
+        <script src="js/modernizr.custom.05819.js"></script>
+        <script src="js/script.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <nav class="navbar">
+                    <ul class="navList">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact Form</a></li>
+                    <li><a href="other.html">Calculator</a></li>
+                    <li><a href="safety.html">Safety</a></li>
+                    <li class="active"><a href="time.html">Time Elapsed</a></li>
+                    </ul>
+            </nav>
+
+            <header>
+                <h2>Welcome</h2>
+            </header>
+
+            <div>
+                <form>
+                    <p><label for="day">Day</label>
+                        <input type="number" id="userDay" name="userDay" required /></P>
+                    <p><label for="month">Month</label>
+                        <input type="number" id="userMonth" name="userMonth" required /></p>
+                    <p><label for="year">Year</label>
+                        <input type="number" id="userYear" name="userYear" required /></p>
+                </form>
+                     <input type="submit" value="Enter" onclick="elapsedTime()">
+              </div>
+            <div>
+              <p id="answer"></p>
+            </div>
+
+            <footer class="foot txtWht">
+                <p>CWB 205</p>
+            </footer>
+        </div>
+    </body>
+</html>

@@ -28,6 +28,7 @@ function showAnswer() {
                 numTwo = document.getElementById("numTwo").value;
                 document.getElementById("answer").innerHTML = parseInt(numOne) + parseInt(numTwo);
             }
+
 function movieCheck(movie) {
     if (movie == "m1") {
         alert(`Nice try, but this isn't it`);
@@ -45,3 +46,22 @@ function movieCheck(movie) {
         alert(`Giving up already huh?`);
     }
 }
+
+// Function to calculate elapsed time of day, month and year based on user input
+function elapsedTime() {
+    let userDay = document.getElementById("userDay").value,
+    userMonth = document.getElementById("userMonth").value,
+    userYear = document.getElementById("userYear").value;
+
+    let d = new Date(userDay);
+    m = new Date(userMonth);
+    y = new Date(userYear);
+
+    let dayRef = d.getDay();
+    let monRef = m.getMonth();
+    let yrRef = y.getFullYear();
+
+    document.getElementById("answer").innerHTML = console.log(userDay - dayRef);
+    document.getElementById("answer").innerHTML = console.log(userMonth - monRef);
+    document.getElementById("answer").innerHTML = console.log(userYear - yrRef);
+  }
