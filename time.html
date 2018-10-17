@@ -12,12 +12,12 @@
         <div class="container">
             <nav class="navbar">
                     <ul class="navList">
-                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="contact.html">Contact Form</a></li>
                     <li><a href="other.html">Calculator</a></li>
                     <li><a href="safety.html">Safety</a></li>
-                    <li><a href="time.html">Time Elapsed</a></li>
+                    <li class="active"><a href="time.html">Time Elapsed</a></li>
                     </ul>
             </nav>
 
@@ -28,16 +28,16 @@
             <div>
                 <form>
                     <p><label for="day">Day</label>
-                        <input type="text" id="userDay" name="userDay" required /></P>
+                        <input type="number" id="userDay" name="userDay" required /></P>
                     <p><label for="month">Month</label>
-                        <input type="text" id="userMonth" name="userMonth" required /></p>
+                        <input type="number" id="userMonth" name="userMonth" required /></p>
                     <p><label for="year">Year</label>
-                        <input type="text" id="userYear" name="userYear" required /></p>
+                        <input type="number" id="userYear" name="userYear" required /></p>
                 </form>
                      <input type="submit" value="Enter" onclick="elapsedTime()">
               </div>
             <div>
-              <p></p>
+              <p id="answer"></p>
             </div>
 
             <footer class="foot txtWht">
