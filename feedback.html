@@ -35,8 +35,9 @@
                             <input type='text' id='lname' name="lname" placeholder="Last Name..." minlength="3" maxlength="50" required="required" /></p>
                         <p><label for="eAddress">Email Address: </label>
                             <input type="email" id="eAddress" name="eAddress" placeholder="Valid Email Address..." required="required" /></p>
+                        <textarea name='subject' id='subject' cols="30" rows="10" placeholder="Compose..." required="required" ></textarea>
                 </form>
-                <input type="submit" value="Submit">
+                <input type="submit" value="Submit" onclick="stringConversion(this)">
             </div>
 
 

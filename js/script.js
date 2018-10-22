@@ -65,3 +65,26 @@ function elapsedTime() {
     document.getElementById("answer").innerHTML = console.log(userMonth - monRef);
     document.getElementById("answer").innerHTML = console.log(userYear - yrRef);
   }
+
+// This function is for Individual Project 7
+function stringConversion() {
+    // initialize empty array
+    let feedback = [];
+
+    let fname = document.getElementById("fname").value,
+    lname = document.getElementById("lname").value,
+    eAddress = document.getElementById("eAddress").value,
+    subject = document.getElementById("subject").value;
+
+    // push user input into feedback array
+    feedback.push(fname);
+    feedback.push(lname);
+    feedback.push(eAddress);
+    feedback.push(subject);
+
+    // Convert array into a string
+    let feedbackString = feedback.join();
+    //alert(feedbackString);
+
+    alert(`Thank you! Your feedback has been submitted, ${fname}.`);
+}
